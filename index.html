@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>BMI Checker</h1>
+    <div class="container">
+        <label>
+            Weight:
+            <input type="text" class="weight-input" name="weight-input" placeholder="Enter your weight in KGs">
+        </label>
+        <label>
+            Height:
+            <input type="text" class="height-input" name="height-input" placeholder="Enter your height in Inches">
+        </label>
+
+        <button onclick="bmiCalc ()">Check</button>
+
+        <div class="bmi-display"></div>
+        <div class="bmi-category"></div>
+    </div>
+    <div>
+        <p class="hide" onclick="matter()" id="learn-more">Learn more about BMI here...</p>
+    </div>
+    <div id="matter-div" class="hide">
+        <h1>BMI Categories</h1>
+        <section>
+            <h2>Underweight (BMI &lt; 18.5)</h2>
+            <p><strong>Health Risks:</strong> Increased risk of malnutrition, osteoporosis, anemia, and other health
+                issues related to nutrient deficiencies. It can also indicate underlying health conditions or eating
+                disorders.</p>
+        </section>
+
+        <section>
+            <h2>Normal weight (BMI 18.5–24.9)</h2>
+            <p><strong>Health Risks:</strong> Generally associated with the lowest risk of weight-related health
+                problems. However, it's important to remember that BMI doesn't measure body fat directly, so it's
+                possible to have a healthy BMI and still have a high body fat percentage.</p>
+        </section>
+
+        <section>
+            <h2>Overweight (BMI 25–29.9)</h2>
+            <p><strong>Health Risks:</strong> Higher risk of cardiovascular diseases, hypertension, type 2 diabetes, and
+                certain cancers. Being overweight can also lead to metabolic syndrome, which increases the risk of heart
+                disease and diabetes.</p>
+        </section>
+
+        <section>
+            <h2>Obesity (BMI ≥ 30)</h2>
+            <p><strong>Class 1 (BMI 30–34.9)</strong><br>
+                <strong>Health Risks:</strong> Increased risk of heart disease, type 2 diabetes, high blood pressure,
+                certain cancers, and sleep apnea.
+            </p>
+            <p><strong>Class 2 (BMI 35–39.9)</strong><br>
+                <strong>Health Risks:</strong> Higher risk of the same conditions as Class 1, but more severe. Increased
+                likelihood of developing serious health complications.
+            </p>
+            <p><strong>Class 3 (BMI ≥ 40)</strong><br>
+                <strong>Health Risks:</strong> Highest risk of obesity-related health conditions, including severe
+                cardiovascular disease, severe sleep apnea, joint problems, and a significantly increased risk of
+                mortality.
+            </p>
+        </section>
+
+        <section>
+            <h2>Limitations of BMI:</h2>
+            <ul>
+                <li><strong>Doesn't measure body fat directly:</strong> BMI is a simple calculation based on height and
+                    weight, and it doesn't differentiate between muscle and fat mass.</li>
+                <li><strong>Doesn't account for distribution of fat:</strong> Where you carry your weight (e.g., around
+                    your waist vs. hips) can also affect health risks.</li>
+                <li><strong>Variability with age, sex, and ethnicity:</strong> BMI may not be equally predictive of
+                    health risk across different populations and ages. For instance, older adults might have more body
+                    fat at the same BMI compared to younger adults.</li>
+                <li><strong>Athletes and muscular individuals:</strong> They may have a higher BMI due to increased
+                    muscle mass, not increased body fat.</li>
+            </ul>
+            <p>Despite these limitations, BMI is a useful screening tool when used alongside other assessments and
+                measurements to evaluate an individual's overall health.</p>
+        </section>`
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
